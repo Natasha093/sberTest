@@ -39,14 +39,6 @@ public class InsuranceTest {
         driver.findElement(By.xpath("//span[text()='Страхование']")).click();
         driver.findElement(By.xpath("//a[contains(text(),'Путешествия и покупки')][contains(@class,'lg-menu__sub-link')]")).click();
 
-       // Wait<WebDriver> wait = new WebDriverWait(driver, 5, 1000);
-        /*wait.until(ExpectedConditions.visibilityOf(
-                driver.findElement(By.xpath("//*[contains(text(),'Отправить заявку')][contains(@class,'btn')]"))));*/
-
-        /*driver.findElement(By.xpath("//*[contains(text(),'Отправить заявку')][contains(@class,'btn')]")).click();
-
-        wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//h4[@class='modal-title']"))));*/
-
         assertEquals("Страхование путешественников",
                 driver.findElement(By.xpath("//h3[text()='Страхование путешественников']")).getText());
 
